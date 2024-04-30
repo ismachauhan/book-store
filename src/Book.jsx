@@ -1,32 +1,25 @@
-const Book = ({ data }) => {
-    console.log(data);
+const Book=(props)=>{
+    console.log(props);
     return (
-        <div className="book">
-            <h2>{Title}</h2>
-            <img src={imgLink}</img>
-            <h2>{Author}</h2>
-            <h3>{Price</h3>
-        </div>
-    )
+    <div className="book">
+        <h2>{props.title}</h2>
+        <img src={props.imgLink}/>
+        <h2>{props.author}</h2>
+        <h3>{props.price}</h3>
+       
+    </div>
+    );
 };
 export default Book;
-const Price = () => {
-    return <h3>$120</h3>
-}
-const Image = () => {
-    return <h3><img src="https://m.media-amazon.com/images/I/61ewyOG0IZS._SY522_.jpg"></img></h3>
-}
-const Title = () => <h2>HAMLET</h2>
-const Author = () => {
-    return <h3>WILLIAM SHAKESPEARE</h3>
-    const Price = () => {
-        return <h3>$120</h3>
-    }
-    const Image = () => {
-        return <h3><img src="https://m.media-amazon.com/images/I/61ewyOG0IZS._SY522_.jpg"></img></h3>
-    }
-    const Title = () => <h2>HAMLET</h2>
-    const Author = () => {
-        return <h3>WILLIAM SHAKESPEARE</h3>
-    }
-}
+
+// const Title =()=><h2>Atomic Habits : the life-changing million-copy</h2>;
+// const Price =()=>{
+// return <h2>Rs. 459</h2>;
+// };
+// const Image =()=>{
+//     return <img src="https://m.media-amazon.com/images/I/81Ls+SBCLiL.SL1500.jpg" height="300" width="200"/>;
+//  };
+
+//     function Author(){
+//         return <h2>James Clear</h2>;
+//     }
